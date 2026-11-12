@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ward Monitor · Edge Health</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Ward monitor</h1>
+  <span id="conn" class="conn">Connecting…</span>
+</header>
+<main>
+  <nav id="patients" aria-label="Patients"></nav>
+  <section id="detail" aria-live="polite">
+    <p class="empty">Select a patient. Start the edge nodes if no readings appear.</p>
+  </section>
+  <aside>
+    <div id="edge" class="panel"></div>
+    <div class="panel">
+      <h2>Alerts</h2>
+      <ul id="alerts"></ul>
+    </div>
+  </aside>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
